@@ -1,0 +1,44 @@
+
+
+{
+    "name": "danielromeroauk/curso-php",
+    "description": "Clase 9 del curso PHP desde cero en Escuela Digital",
+    "authors": [
+        {
+            "name": "Gustavo Marquez Prieto",
+            "email": "ing.gustavo.marquez"
+        }
+    ],
+    // especificamos las dependencias
+    "require": {
+        // Especificamos la version de php
+        "php": ">=7.0.0",
+        // Usamo o ORM, similar a framwork, especificamos la version 
+        "illuminate/database": "5.2.21"
+    },
+    // Defino la PATH que cargara en el autoload
+    "autoload": {
+        "psr-4": { // indico la raiz del proyecto o NAMESPACE
+            "App\\": "app/" // nombre de carpeta
+        }
+    }
+}
+
+
+
+/*
+
+Instalacion y preparacion de composer
+
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php -r "if (hash_file('SHA384', 'composer-setup.php') === 'c32408bcd017c577ce80605420e5987ce947a5609e8443dd72cd3867cc3a0cf442e5bf4edddbcbe72246a953a6c48e21') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+php composer-setup.php
+php -r "unlink('composer-setup.php');"
+
+php composer.phar init    // para crear este archivo json
+
+
+
+Composer -> Forma de manejar las Dependencias o librerias
+
+*/

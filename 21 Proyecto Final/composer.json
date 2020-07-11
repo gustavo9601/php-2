@@ -1,0 +1,19 @@
+{
+  "name": "danielromeroauk/curso-php",
+  "description": "Tienda Proyecto Final",
+  "authors": [
+    {
+      "name": "Gustavo Marquez Prieto",
+      "email": "ing.gustavo.marquez@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0.0",
+    "illuminate/database": "5.2.21"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  }
+}
